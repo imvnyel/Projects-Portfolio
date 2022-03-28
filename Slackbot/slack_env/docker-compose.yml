@@ -1,0 +1,7 @@
+version: '3'
+services: 
+  slack_bot:
+    build: slackbot_app/
+    volumes:
+      - ./slackbot_app/:/app
+    container_name: captcha_bot
